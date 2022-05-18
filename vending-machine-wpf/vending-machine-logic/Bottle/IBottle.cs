@@ -1,4 +1,4 @@
-namespace Flaske_Automat;
+namespace vending_machine_wpf;
 
 interface IBottle {
     string Type { get; }

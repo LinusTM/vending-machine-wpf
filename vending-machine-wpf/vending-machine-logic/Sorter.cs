@@ -1,6 +1,8 @@
+using System.Threading;
 using System.Diagnostics;
+using System.Collections.Generic;
 
-namespace Flaske_Automat;
+namespace vending_machine_wpf;
 
 internal class Sorter {
     public static void Sort(Queue<Bottle> boxOfBottles, Queue<Bottle> beerBox, Queue<Bottle> sodaBox) {

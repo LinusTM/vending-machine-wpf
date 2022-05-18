@@ -9,7 +9,108 @@
         Title="Vending Machine" Height="450" Width="800">
     <Grid MouseDown="Grid_MouseDown">
         <Button Content="Start" HorizontalAlignment="Left" Margin="25,370,0,0" VerticalAlignment="Top" Width="70"/>
-        <Button Content="Stop" HorizontalAlignment="Left" Margin="115,370,0,0" VerticalAlignment="Top" Width="70"/>
-
+        <Button Content="Pause" HorizontalAlignment="Left" Margin="115,370,0,0" VerticalAlignment="Top" Width="70"/>
+        <Image x:Name="ProducerBox" Margin="97,137,563,157" Source="/assets/box.png" Stretch="Fill"/>
+        <Image x:Name="BeerBufferBox" Margin="323,45,337,249" Source="/assets/box.png" Stretch="Fill"/>
+        <Image x:Name="SodaBufferBox" Margin="323,232,337,62" Source="/assets/box.png" Stretch="Fill"/>
+        <Image x:Name="BeerConsumerBox" Margin="570,45,90,249" Source="/assets/box.png" Stretch="Fill"/>
+        <Image x:Name="SodaConsumerBox" Margin="570,232,90,62" Source="/assets/box.png" Stretch="Fill"/>
+        <Image x:Name="BeerConsumeWait" Margin="433,15,184,236" Source="/assets/arrow.png" Stretch="Fill"/>
+        <Image x:Name="SodaConsumeWait" Margin="433,203,184,48" Source="/assets/arrow.png" Stretch="Fill"/>
+        <Image x:Name="BeerWait" Margin="198,41,419,210" Source="/assets/arrow.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-25.908"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="SodaWait" Margin="198,184,419,66" Source="/assets/arrow.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="27.914"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="ProducerDot" Margin="64,104,530,125" Source="/assets/dot.png" Stretch="Fill"/>
+        <Image x:Name="BeerConsumerDot" Margin="537,12,57,216" Source="/assets/dot.png" Stretch="Fill"/>
+        <Image x:Name="SodaConsumerDot" Margin="537,198,57,31" Source="/assets/dot.png" Stretch="Fill"/>
+        <Label Content="Producer" HorizontalAlignment="Left" Height="31" Margin="123,137,0,0" VerticalAlignment="Top" Width="86" FontFamily="Cooper Black" FontSize="16" FontStyle="Italic" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="1.567"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="Soda box" HorizontalAlignment="Left" Height="31" Margin="350,232,0,0" VerticalAlignment="Top" Width="81" FontFamily="Cooper Black" FontSize="16" FontStyle="Italic" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-1.814"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="Beer box" HorizontalAlignment="Left" Height="31" Margin="350,45,0,0" VerticalAlignment="Top" Width="78" FontFamily="Cooper Black" FontSize="16" FontStyle="Italic" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.971"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="Beer consumer" HorizontalAlignment="Left" Height="31" Margin="575,45,0,0" VerticalAlignment="Top" Width="130" FontFamily="Cooper Black" FontSize="16" FontStyle="Italic" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.351"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="Soda consumer" HorizontalAlignment="Left" Height="31" Margin="575,232,0,0" VerticalAlignment="Top" Width="135" FontFamily="Cooper Black" FontSize="16" FontStyle="Italic" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.485"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Image x:Name="ControlsIndicator" Margin="-44,147,543,-15" Source="/assets/controls.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="3.705"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Label x:Name="Title" Content="Vending Machine" HorizontalAlignment="Left" Height="40" Margin="25,15,0,0" VerticalAlignment="Top" Width="227" FontFamily="Cooper Black" FontSize="24" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-3.32"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="BeerBuffer" Content="0" HorizontalAlignment="Left" Margin="368,77,0,0" VerticalAlignment="Top" FontSize="36" FontFamily="Cooper Black"/>
+        <Label x:Name="SodaBuffer" Content="0" HorizontalAlignment="Left" Margin="368,264,0,0" VerticalAlignment="Top" FontSize="36" FontFamily="Cooper Black"/>
     </Grid>
 </Window>

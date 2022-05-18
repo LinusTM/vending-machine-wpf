@@ -1,6 +1,8 @@
+using System.Threading;
 using System.Diagnostics;
+using System.Collections.Generic;
 
-namespace Flaske_Automat;
+namespace vending_machine_wpf;
 
 internal class Consumer {
     internal static void Consume(Queue<Bottle> box) {

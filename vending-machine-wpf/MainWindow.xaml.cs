@@ -34,5 +34,10 @@ namespace vending_machine_wpf
         {
 
         }
+
+        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

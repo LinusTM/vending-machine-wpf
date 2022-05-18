@@ -1,4 +1,9 @@
-﻿namespace Flaske_Automat;
+﻿/*
+using System;
+using System.Threading;
+using System.Collections.Generic;
+
+namespace vending_machine_wpf;
 
 class Program {
     // Shared resources
@@ -24,3 +29,4 @@ class Program {
         consumeSoda.Join();
     }
 }
+*/

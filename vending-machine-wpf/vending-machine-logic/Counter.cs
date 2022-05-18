@@ -1,4 +1,4 @@
-namespace Flaske_Automat;
+namespace vending_machine_wpf;
 
 internal class Counter {
     private static int number;
