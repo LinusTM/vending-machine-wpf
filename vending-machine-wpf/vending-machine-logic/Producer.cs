@@ -7,7 +7,7 @@ namespace vending_machine_wpf;
 
 internal class Producer {
     // Produces Bottles randomly while the buffer is below 10
-    internal static void Produce(Queue<Bottle> boxOfBottles) {
+    internal void Produce(Queue<Bottle> boxOfBottles) {
         while(true) {
             Monitor.Enter(boxOfBottles);
             try {
