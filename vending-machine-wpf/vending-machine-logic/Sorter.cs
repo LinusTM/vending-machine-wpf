@@ -5,7 +5,7 @@ using System.Collections.Generic;
 namespace vending_machine_wpf;
 
 internal class Sorter {
-    public static void Sort(Queue<Bottle> boxOfBottles, Queue<Bottle> beerBox, Queue<Bottle> sodaBox) {
+    public static Bottle Sort(Queue<Bottle> boxOfBottles, Queue<Bottle> beerBox, Queue<Bottle> sodaBox) {
         while(true) {
             Monitor.Enter(boxOfBottles);
 
@@ -46,8 +46,11 @@ internal class Sorter {
                         finally {
                             Monitor.Exit(sodaBox);
                         }
-                        break;
+                        break; 
                 }
+                
+                // Return dequeued bottle
+                return currentBottle;
             } 
             finally {
                 Monitor.Exit(boxOfBottles);

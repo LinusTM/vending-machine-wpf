@@ -1,10 +1,10 @@
 namespace vending_machine_wpf;
 
-internal abstract class Bottle : IBottle {
+public abstract class Bottle : IBottle {
     private int number;
     private string type;
 
-    internal Bottle(string type) {
+    public Bottle(string type) {
         Counter.Increment();
 
         this.number = Counter.Number;

@@ -1,11 +1,12 @@
 using System.Threading;
 using System.Diagnostics;
 using System.Collections.Generic;
+using vending_machine_wpf.Managers;
 
 namespace vending_machine_wpf;
 
 internal class Consumer {
-    internal static void Consume(Queue<Bottle> box) {
+    internal static Bottle Consume(Queue<Bottle> box) {
         while(true) {
             Monitor.Enter(box);
 
@@ -19,6 +20,8 @@ internal class Consumer {
                 // Toss nearest soda and notify
                 Bottle currentBottle = box.Dequeue();
                 Debug.WriteLine($"CONSUMER: just drank {currentBottle.Type}{currentBottle.Number}");
+                
+                return currentBottle;
 
             }
             finally {
