@@ -6,6 +6,8 @@ using vending_machine_wpf.Managers;
 namespace vending_machine_wpf;
 
 internal class Consumer {
+    // Dequeues bottle from their designated Bottle buffer,
+    // as long as local buffer is not empty
     internal static Bottle Consume(Queue<Bottle> box) {
         while(true) {
             Monitor.Enter(box);

@@ -4,7 +4,9 @@ using System.Collections.Generic;
 
 namespace vending_machine_wpf;
 
-internal class Sorter {
+public class Sorter {
+    // Sorts bottles depending on their type,
+    // then returns the dequeued bottle
     public static Bottle Sort(Queue<Bottle> boxOfBottles, Queue<Bottle> beerBox, Queue<Bottle> sodaBox) {
         while(true) {
             Monitor.Enter(boxOfBottles);
@@ -55,8 +57,6 @@ internal class Sorter {
             finally {
                 Monitor.Exit(boxOfBottles);
             }
-
-            Thread.Sleep(500);
         }
     }
 }
