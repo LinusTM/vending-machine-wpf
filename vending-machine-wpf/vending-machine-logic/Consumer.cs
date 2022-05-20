@@ -8,8 +8,7 @@ namespace vending_machine_wpf;
 
 internal class Consumer {
     internal event EventHandler<BottleEventArgs> consumeEvent;
-    public void BottleConsumed(Bottle bottle)
-    {
+    private void BottleConsumed(Bottle bottle) {
         consumeEvent?.Invoke(this, new BottleEventArgs(bottle));
     }
     
@@ -35,6 +34,7 @@ internal class Consumer {
             finally {
                 Monitor.Exit(box);
             }
+            Thread.Sleep(500);
         }
     }
 }

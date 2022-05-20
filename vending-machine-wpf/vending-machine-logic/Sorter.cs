@@ -11,18 +11,15 @@ public class Sorter {
     internal event EventHandler<BufferEventArgs> sodaBufferEvent;
     internal event EventHandler<BufferEventArgs> beerBufferEvent;
     
-    public void BottleSorted(Bottle bottle)
-    {
+    private void BottleSorted(Bottle bottle) {
         sortEvent?.Invoke(this, new BottleEventArgs(bottle));
     }
     
-    public void SodaBufferUpdate(Queue<Bottle> bottles)
-    {
+    private void SodaBufferUpdate(Queue<Bottle> bottles) {
         sodaBufferEvent?.Invoke(this, new BufferEventArgs(bottles));
     }
-    
-    public void BeerBufferUpdate(Queue<Bottle> bottles)
-    {
+
+    private void BeerBufferUpdate(Queue<Bottle> bottles) {
         beerBufferEvent?.Invoke(this, new BufferEventArgs(bottles));
     }
     
