@@ -34,7 +34,8 @@ internal class Consumer {
             finally {
                 Monitor.Exit(box);
             }
-            Thread.Sleep(500);
+
+            Thread.Sleep(2000);
         }
     }
 }

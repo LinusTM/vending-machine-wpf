@@ -25,6 +25,7 @@ public partial class MainWindow : Window {
         beerConsumer.consumeEvent += OnBeerConsume;
         sorter.sodaBufferEvent += OnSodaBufferUpdate;
         sorter.beerBufferEvent += OnBeerBufferUpdate;
+        sorter.sortEvent += OnSort;
 
         // Creating and starting threads
         Thread produceBottles = new Thread(() => producer.Produce(boxOfBottles));
@@ -47,13 +48,17 @@ public partial class MainWindow : Window {
     }
 
     private void OnSodaConsume(object? sender, BottleEventArgs e) {
-        Dispatcher.Invoke(() => { });
+        Dispatcher.Invoke(() => { ConsumedBeer.Content = e.Bottle.Type + e.Bottle.Number; });
     }
 
+    private void OnSort(object? sender, BottleEventArgs e) {
+        Dispatcher.Invoke(() => { SortedBottle.Content = e.Bottle.Type + e.Bottle.Number; });
+    }
+    
     private void OnBeerConsume(object? sender, BottleEventArgs e) {
-        Dispatcher.Invoke(() => { });
+        Dispatcher.Invoke(() => { ConsumedSoda.Content = e.Bottle.Type + e.Bottle.Number; });
     }
-
+    
     private void Grid_MouseDown(object sender, MouseButtonEventArgs e) {
     }
 }
