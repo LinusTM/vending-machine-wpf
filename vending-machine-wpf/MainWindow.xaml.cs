@@ -58,7 +58,7 @@ public partial class MainWindow : Window {
     private void OnBeerConsume(object? sender, BottleEventArgs e) {
         Dispatcher.Invoke(() => { ConsumedSoda.Content = e.Bottle.Type + e.Bottle.Number; });
     }
-    
+
     private void Grid_MouseDown(object sender, MouseButtonEventArgs e) {
     }
 }
