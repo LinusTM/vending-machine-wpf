@@ -24,7 +24,7 @@ public class Sorter {
     }
     
     // Sorts bottles depending on their type,
-    // then returns the dequeued bottle
+    // then triggers event with the dequeued bottle
     public void Sort(Queue<Bottle> boxOfBottles, Queue<Bottle> beerBox, Queue<Bottle> sodaBox) {
         while(true) {
             Monitor.Enter(boxOfBottles);
