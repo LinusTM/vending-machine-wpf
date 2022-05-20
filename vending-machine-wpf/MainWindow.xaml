@@ -10,11 +10,8 @@
     <Grid MouseDown="Grid_MouseDown">
         <Button Content="Start" HorizontalAlignment="Left" Margin="25,370,0,0" VerticalAlignment="Top" Width="70"/>
         <Button Content="Pause" HorizontalAlignment="Left" Margin="115,370,0,0" VerticalAlignment="Top" Width="70"/>
-        <Image x:Name="ProducerBox" Margin="97,137,563,157" Source="/assets/box.png" Stretch="Fill"/>
         <Image x:Name="BeerBufferBox" Margin="323,45,337,249" Source="/assets/box.png" Stretch="Fill"/>
         <Image x:Name="SodaBufferBox" Margin="323,232,337,62" Source="/assets/box.png" Stretch="Fill"/>
-        <Image x:Name="BeerConsumerBox" Margin="570,45,90,249" Source="/assets/box.png" Stretch="Fill"/>
-        <Image x:Name="SodaConsumerBox" Margin="570,232,90,62" Source="/assets/box.png" Stretch="Fill"/>
         <Image x:Name="BeerConsumeWait" Margin="433,15,184,236" Source="/assets/arrow.png" Stretch="Fill"/>
         <Image x:Name="SodaConsumeWait" Margin="433,203,184,48" Source="/assets/arrow.png" Stretch="Fill"/>
         <Image x:Name="BeerWait" Margin="198,41,419,210" Source="/assets/arrow.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
@@ -37,9 +34,6 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Image x:Name="ProducerDot" Margin="64,104,530,125" Source="/assets/dot.png" Stretch="Fill"/>
-        <Image x:Name="BeerConsumerDot" Margin="537,12,57,216" Source="/assets/dot.png" Stretch="Fill"/>
-        <Image x:Name="SodaConsumerDot" Margin="537,198,57,31" Source="/assets/dot.png" Stretch="Fill"/>
         <Label Content="Producer" HorizontalAlignment="Left" Height="31" Margin="123,137,0,0" VerticalAlignment="Top" Width="86" FontFamily="Cooper Black" FontSize="16" FontStyle="Italic" RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
                 <TransformGroup>
@@ -110,7 +104,13 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Label x:Name="BeerBuffer" Content="0" HorizontalAlignment="Left" Margin="368,77,0,0" VerticalAlignment="Top" FontSize="36" FontFamily="Cooper Black"/>
-        <Label x:Name="SodaBuffer" Content="0" HorizontalAlignment="Left" Margin="368,264,0,0" VerticalAlignment="Top" FontSize="36" FontFamily="Cooper Black"/>
+        <Label x:Name="BeerBuffer" Content="0" HorizontalAlignment="Left" Margin="368,77,0,0" VerticalAlignment="Top" FontSize="30" FontFamily="Cooper Black"/>
+        <Label x:Name="SodaBuffer" Content="0" HorizontalAlignment="Left" Margin="368,264,0,0" VerticalAlignment="Top" FontSize="30" FontFamily="Cooper Black"/>
+        <Image x:Name="BeerConsumerBox" Margin="570,47,92,249" Source="/assets/rectangle.png" Stretch="Fill"/>
+        <Image x:Name="SodaConsumerBox" Margin="570,233,92,63" Source="/assets/rectangle.png" Stretch="Fill"/>
+        <Image x:Name="BeerConsumerBox_Copy" Margin="97,136,565,160" Source="/assets/rectangle.png" Stretch="Fill"/>
+        <Label x:Name="ProducedBottle" Content="Beer" HorizontalAlignment="Left" Margin="118,186,0,0" VerticalAlignment="Top" FontSize="30" FontFamily="Cooper Black" Width="96"/>
+        <Label x:Name="ConsumedSoda" Content="" HorizontalAlignment="Left" Margin="591,96,0,0" VerticalAlignment="Top" FontSize="30" FontFamily="Cooper Black" Width="96"/>
+        <Label x:Name="ConsumedBeer" Content="" HorizontalAlignment="Left" Margin="591,283,0,0" VerticalAlignment="Top" FontSize="30" FontFamily="Cooper Black" Width="96"/>
     </Grid>
 </Window>
