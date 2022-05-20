@@ -84,7 +84,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Image x:Name="ControlsIndicator" Margin="-44,147,543,-15" Source="/assets/controls.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+        <Image x:Name="ControlsIndicator" Margin="-44,172,543,-15" Source="/assets/controls.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -104,12 +104,11 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Label x:Name="BeerBuffer" Content="0" HorizontalAlignment="Left" Margin="368,77,0,0" VerticalAlignment="Top" FontSize="30" FontFamily="Cooper Black"/>
-        <Label x:Name="SodaBuffer" Content="0" HorizontalAlignment="Left" Margin="368,264,0,0" VerticalAlignment="Top" FontSize="30" FontFamily="Cooper Black"/>
+        <Label x:Name="BeerBuffer" Content="" HorizontalAlignment="Left" Margin="368,77,0,0" VerticalAlignment="Top" FontSize="30" FontFamily="Cooper Black"/>
+        <Label x:Name="SodaBuffer" Content="" HorizontalAlignment="Left" Margin="368,264,0,0" VerticalAlignment="Top" FontSize="30" FontFamily="Cooper Black"/>
         <Image x:Name="BeerConsumerBox" Margin="570,47,80,249" Source="/assets/rectangle.png" Stretch="Fill"/>
         <Image x:Name="SodaConsumerBox" Margin="570,233,80,63" Source="/assets/rectangle.png" Stretch="Fill"/>
-        <Image x:Name="SorterBox" Margin="97,136,565,160" Source="/assets/rectangle.png" Stretch="Fill"/>
-        <Label x:Name="SortedBottle" Content="" HorizontalAlignment="Left" Margin="115,170,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Cooper Black" Width="96"/>
+        <Label x:Name="SortedBottle" Content="" HorizontalAlignment="Left" Margin="115,171,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Cooper Black" Width="96"/>
         <Label x:Name="ConsumedSoda" Content="" HorizontalAlignment="Left" Margin="591,82,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Cooper Black" Width="96"/>
         <Label x:Name="ConsumedBeer" Content="" HorizontalAlignment="Left" Margin="591,264,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Cooper Black" Width="96"/>
         <Image Margin="-2,-17,533,183" Source="/assets/Scribble.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
@@ -122,5 +121,6 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
+        <Image x:Name="BeerConsumerBox_Copy" Margin="88,134,562,162" Source="/assets/rectangle.png" Stretch="Fill"/>
     </Grid>
 </Window>
