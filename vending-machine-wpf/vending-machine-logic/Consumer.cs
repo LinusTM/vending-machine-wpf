@@ -3,7 +3,6 @@ using System.Threading;
 using System.Diagnostics;
 using System.Collections.Generic;
 using vending_machine_wpf.EventArgs;
-using vending_machine_wpf.Managers;
 
 namespace vending_machine_wpf;
 

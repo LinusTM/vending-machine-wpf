@@ -1,8 +1,10 @@
-﻿using System.Collections.Generic;
+﻿/*
+using System.Collections.Generic;
 using System.Threading;
+using System.Windows.Threading;
 using vending_machine_wpf.EventArgs;
 
-namespace vending_machine_wpf.Managers;
+namespace vending_machine_wpf;
 
 public class Thread_Manager {
     // Shared resources
@@ -37,29 +39,5 @@ public class Thread_Manager {
         consumeBeer.Join();
         consumeSoda.Join();
     }
-
-    public void OnSodaBufferUpdate(object? sender, BufferEventArgs e)
-    {
-        
-    }
-    
-    public void OnBeerBufferUpdate(object? sender, BufferEventArgs e)
-    {
-        
-    }
-    
-    public void OnSodaConsume(object? sender, BottleEventArgs e)
-    {
-        
-    }
-    
-    public void OnBeerConsume(object? sender, BottleEventArgs e)
-    {
-        
-    }
-
-    public void PauseThreads()
-    {
-        
-    }
 }
+*/
