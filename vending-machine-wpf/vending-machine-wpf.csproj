@@ -13,6 +13,8 @@
     <None Remove="assets\box.png" />
     <None Remove="assets\controls.png" />
     <None Remove="assets\dot.png" />
+    <None Remove="assets\rectangle.png" />
+    <None Remove="assets\Scribble.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,6 +22,8 @@
     <Resource Include="assets\box.png" />
     <Resource Include="assets\controls.png" />
     <Resource Include="assets\dot.png" />
+    <Resource Include="assets\rectangle.png" />
+    <Resource Include="assets\Scribble.png" />
   </ItemGroup>
 
 </Project>

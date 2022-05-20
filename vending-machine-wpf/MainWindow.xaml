@@ -99,7 +99,7 @@
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform/>
-                    <RotateTransform Angle="-3.32"/>
+                    <RotateTransform Angle="-7.131"/>
                     <TranslateTransform/>
                 </TransformGroup>
             </Label.RenderTransform>
@@ -109,8 +109,18 @@
         <Image x:Name="BeerConsumerBox" Margin="570,47,92,249" Source="/assets/rectangle.png" Stretch="Fill"/>
         <Image x:Name="SodaConsumerBox" Margin="570,233,92,63" Source="/assets/rectangle.png" Stretch="Fill"/>
         <Image x:Name="BeerConsumerBox_Copy" Margin="97,136,565,160" Source="/assets/rectangle.png" Stretch="Fill"/>
-        <Label x:Name="ProducedBottle" Content="Beer" HorizontalAlignment="Left" Margin="118,186,0,0" VerticalAlignment="Top" FontSize="30" FontFamily="Cooper Black" Width="96"/>
-        <Label x:Name="ConsumedSoda" Content="" HorizontalAlignment="Left" Margin="591,96,0,0" VerticalAlignment="Top" FontSize="30" FontFamily="Cooper Black" Width="96"/>
-        <Label x:Name="ConsumedBeer" Content="" HorizontalAlignment="Left" Margin="591,283,0,0" VerticalAlignment="Top" FontSize="30" FontFamily="Cooper Black" Width="96"/>
+        <Label x:Name="ProducedBottle" Content="" HorizontalAlignment="Left" Margin="115,170,0,0" VerticalAlignment="Top" FontSize="30" FontFamily="Cooper Black" Width="96"/>
+        <Label x:Name="ConsumedSoda" Content="" HorizontalAlignment="Left" Margin="591,82,0,0" VerticalAlignment="Top" FontSize="30" FontFamily="Cooper Black" Width="96"/>
+        <Label x:Name="ConsumedBeer" Content="" HorizontalAlignment="Left" Margin="591,264,0,0" VerticalAlignment="Top" FontSize="30" FontFamily="Cooper Black" Width="96"/>
+        <Image Margin="-2,-17,533,183" Source="/assets/Scribble.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="7.017"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
     </Grid>
 </Window>
